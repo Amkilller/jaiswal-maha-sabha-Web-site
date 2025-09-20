@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>संपूर्ण सदस्य सूची</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #800000;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .member-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      min-height: 260px;
+    }
+    .member-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .member-card img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #800000;
+    }
+    .member-card h3 {
+      margin: 10px 0 5px;
+      color: #800000;
+      font-size: 1.1rem;
+    }
+    .member-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #800000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .back-btn:hover {
+      background: #a00000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>राष्ट्रीय कार्यकारिणी - सम्पूर्ण सदस्य सूची</header>
+
+  <div class="member-grid">
+    <!-- Example Members -->
+    <div class="member-card">
+      <img src="member1.jpg" alt="Member">
+      <h3>मा.ना. श्रीपाद येसो नाईक</h3>
+      <p>मुख्य संरक्षक, केंद्रीय मंत्री</p>
+    </div>
+
+    <div class="member-card">
+      <img src="member2.jpg" alt="Member">
+      <h3>श्रीप्रकाश जायसवाल</h3>
+      <p>मुख्य संरक्षक, भूतपूर्व केंद्रीय मंत्री</p>
+    </div>
+
+    <div class="member-card">
+      <img src="member3.jpg" alt="Member">
+      <h3>प्रकाश चौधरी</h3>
+      <p>राष्ट्रीय संरक्षक, भूतपूर्व विधायक</p>
+    </div>
+
+    <div class="member-card">
+      <img src="member4.jpg" alt="Member">
+      <h3>प्रदीप भाई जायसवाल</h3>
+      <p>राष्ट्रीय संरक्षक, भूतपूर्व विधायक</p>
+    </div>
+
+    <div class="member-card">
+      <img src="member5.jpg" alt="Member">
+      <h3>अशोक जायसवाल</h3>
+      <p>राष्ट्रीय संरक्षक</p>
+    </div>
+
+    <!-- Add as many members as you want here -->
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>
