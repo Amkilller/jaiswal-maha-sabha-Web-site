@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>अखिल भारतीय जायसवाल महासभा</title>
+  <title>अखिल भारतीय जायसवाल (सर्ववर्गीय) महासभा</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -42,21 +41,114 @@
       padding: 20px 0;
       margin-top: 40px;
     }
-    /* Slideshow */
-    .carousel-item img {
-      border-radius: 12px;
-      object-fit: cover;
-      width: 100%;
-      height: 400px;
-    }
-    /* Gallery */
-    .gallery img {
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+	.social-icons a {
+    color: white;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+   .member-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.member-section h2 {
+  font-size: 2rem;
+  color: #800000;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #800000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.member-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #800000;
+  margin-bottom: 15px;
+}
+
+.member-card h3 {
+  margin: 8px 0;
+  color: #800000;
+  font-size: 1.1rem;
+}
+
+.member-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* Centers the button horizontally */
+  align-items: center;      /* Ensures vertical alignment if needed */
+  margin-top: 30px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.btn-more {
+  display: inline-block;
+  background: #800000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-more:hover {
+  background: #a52a2a;
+}
+
+
+
+	
   </style>
 </head>
 <body>
@@ -67,7 +159,7 @@
       <img src="logo.png" alt="Jaiswal Samaj Logo" class="logo">
     </div>
     <div class="flex-grow-1 text-center text-white">
-      <h1 class="m-0">अखिल भारतीय जायसवाल महासभा</h1>
+      <h1 class="m-0">अखिल भारतीय जायसवाल (सर्ववर्गीय) महासभा</h1>
       <h3 class="m-0">|| जय सहस्त्रार्जुन भगवान की ||</h3>
     </div>
   </header>
@@ -179,40 +271,57 @@
 
     </div>
   </section>
+  
+  
+  
+                                <!-- राष्ट्रीय कार्यकारिणी  -->
+								
+  <section id="member-section" style="text-align:center; padding:50px 20px; background:#fff;">
+  <h2 style="color:#800000; font-size:2rem; margin-bottom:30px;">राष्ट्रीय कार्यकारिणी</h2>
 
-  <!-- राष्ट्रीय कार्यकारिणी (Slideshow) -->
-  <section id="members" class="container py-5">
-    <h2>राष्ट्रीय कार्यकारिणी</h2>
-    <div id="memberCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <img src="member1.jpg" alt="Member 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>मा.ना. श्रीपाद येसो नाईक</h5>
-            <p>मुख्य संरक्षक, केंद्रीय मंत्री</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="member2.jpg" alt="Member 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>श्रीप्रकाश जायसवाल</h5>
-            <p>मुख्य संरक्षक, प्रमुख केंद्रीय मंत्री</p>
-          </div>
-        </div>
-
-        <!-- Add more members -->
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#memberCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#memberCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+  <div class="member-grid">
+    <div class="member-card">
+      <img src="1.jpg" alt="Member 1">
+      <h3>मा.ना. श्रीपाद येसो नाईक</h3>
+      <p>मुख्य संरक्षक, केंद्रीय मंत्री</p>
     </div>
-  </section>
+    <div class="member-card">
+      <img src="2.jpg" alt="Member 2">
+      <h3>श्रीप्रकाश जायसवाल</h3>
+      <p>मुख्य संरक्षक, भूतपूर्व केंद्रीय मंत्री</p>
+    </div>
+    <div class="member-card">
+      <img src="3.jpg" alt="Member 3">
+      <h3>प्रकाश चौधरी</h3>
+      <p>राष्ट्रीय संरक्षक, भूतपूर्व विधायक</p>
+    </div>
+    <div class="member-card">
+      <img src="4.jpg" alt="Member 4">
+      <h3>प्रदीप भाई जायसवाल</h3>
+      <p>राष्ट्रीय संरक्षक, भूतपूर्व विधायक</p>
+    </div>
+    <div class="member-card">
+      <img src="5.jpg" alt="Member 5">
+      <h3>अशोक जायसवाल</h3>
+      <p>राष्ट्रीय संरक्षक</p>
+    </div>
+	 <div class="member-card">
+      <img src="6.jpg" alt="Member 5">
+      <h3>am</h3>
+      <p>राष्ट्रीय संरक्षक</p>
+  </div> 
+   <div class="member-card">
+      <img src="6.jpg" alt="Member 5">
+      <h3>am</h3>
+      <p>राष्ट्रीय संरक्षक</p>
+  </div> 
+  <br>
+
+</section>
+<div style="text-align:center; margin-top:30px;">
+    <a href="member.html" class="btn-more">View all Members →</a>
+
+</div> 
 
   <!-- Events -->
   <section id="events" class="container py-5">
@@ -240,20 +349,26 @@
   </section>
 
   <!-- Photo Gallery -->
-  <section id="gallery" class="container py-5">
-    <h2>Photo Gallery</h2>
-    <div class="row g-3 gallery">
-      <div class="col-md-4 col-sm-6">
-        <img src="gallery1.jpg" class="img-fluid" alt="Gallery Image 1">
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <img src="gallery2.jpg" class="img-fluid" alt="Gallery Image 2">
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <img src="gallery3.jpg" class="img-fluid" alt="Gallery Image 3">
-      </div>
-    </div>
-  </section>
+  <section id="gallery" style="text-align:center; padding:50px 20px; background:#fff;">
+  <h2 style="color:#800000; font-size:2rem; margin-bottom:30px;">📸 Photo Gallery</h2>
+  
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <img src="1.jpg" alt="Event 1">
+    <img src="2.jpg" alt="Event 2">
+    <img src="3.jpg" alt="Event 3">
+    <img src="4.jpg" alt="Event 4">
+	 <img src="5.jpg" alt="Event 5">
+    <img src="6.jpg" alt="Event 6">
+    <img src="7.jpg" alt="Event 7">
+  </div>
+
+  <!-- View More Button -->
+  <a href="photo.html" class="btn-more">View Full Gallery →</a>
+</section>
+
+
+
 
   <!-- Contact Us -->
   <section id="contact" class="container py-5">
@@ -262,15 +377,17 @@
       <div class="col-md-6">
         <h5>हमसे संपर्क करें</h5>
         <p>📍 पता: दिल्ली, भारत</p>
-        <p>📞 फ़ोन: +91-XXXXXXXXXX</p>
-        <p>📧 ईमेल: info@jaiswalsamaj.org</p>
+        <p>📞 फ़ोन: +91-7447721001</p>
+        <p>📧 ईमेल:akhilbharatiyajaiswal.svg.mhsb@gmail.com </p>
+		<p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Created by Aakash Modi | अखिल भारतीय जायसवाल महासभा © 2025</p>
+    <p> <p>© 2025 Akhil Bhartiya Jaiswal Sarvavargiya Mahasabha  | Designed with ❤️ for the Community</p>
+    <p class="credit">Created by Aakash Modi</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
